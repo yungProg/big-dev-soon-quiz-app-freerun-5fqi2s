@@ -1,19 +1,54 @@
-/* This is an example CSS file, feel free to remove/edit it anytime */
-.footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 10px;
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.footer a {
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
+@font-face {
+  font-family: Nunito-Bold;
+  src: url("assets/fonts/Nunito-Bold.ttf");
 }
 
-.footer span {
-  font-size: 14px;
+@font-face {
+  font-family: Nunito-SemiBold;
+  src: url("assets/fonts/Nunito-SemiBold.ttf");
+}
+
+html, body {
+  font-size: clamp(1rem, 1vw, 1.3rem);
+  font-family: Nunito-SemiBold, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #dfdfdf;
+}
+
+main {
+  background-color: rgb(47, 65, 225);
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  width: 160px;
+  height: 120px;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: clamp(1.2rem, 1vw, 1.5rem);
+  padding: 8px 80px;
+  border-radius: 20px;
+  background: linear-gradient(45deg, purple, blue);
+  color: inherit;
 }

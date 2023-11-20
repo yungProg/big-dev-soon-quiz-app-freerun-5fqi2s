@@ -42,6 +42,10 @@ h1 {
   margin-bottom: 0;
 }
 
+p {
+  color: #c0c0c0;
+}
+
 button {
   cursor: pointer;
   border: none;

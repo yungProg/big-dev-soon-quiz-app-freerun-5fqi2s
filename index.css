@@ -20,18 +20,32 @@ html, body {
   color: #dfdfdf;
 }
 
-main {
+body {
   background-color: rgb(47, 65, 225);
   height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  max-width: 1200px;
+  background-color: chocolate;
+  padding: 20px 40px;
 }
 
 .image-container {
   width: 160px;
   height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, p {
+  text-align: center;
 }
 
 img {
@@ -52,7 +66,39 @@ button {
   outline: none;
   font-size: clamp(1.2rem, 1vw, 1.5rem);
   padding: 8px 80px;
-  border-radius: 20px;
-  background: linear-gradient(45deg, purple, blue);
   color: inherit;
+  display: block;
+}
+
+.start {
+  background: linear-gradient(45deg, purple, blue);
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.exam {
+  display: none;
+}
+
+#score {
+  margin-bottom: 24px;
+}
+
+.next {
+  background-color: cadetblue;
+  margin-left: auto;
+  width: 100%;
+  display: none;
+}
+
+.question {
+  margin-bottom: 36px;
+}
+
+.option {
+  color: black;
+  margin-bottom: 12px;
+  padding: 12px 0;
+  width: 100%;
 }
